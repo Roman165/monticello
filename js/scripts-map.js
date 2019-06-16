@@ -180,13 +180,5 @@
             center: {lat: 47.096571, lng: 37.547517},
             radius: 6
           });
-var contentString = '<div id="content">'+ 'sxdfvgsdf'+   '</div>';
-
-           var infowindow = new google.maps.InfoWindow({
-          content: contentString
-        });
-        marker.addListener('click', function() {
-          infowindow.open(map, marker);
-        });
         }
       

@@ -281,8 +281,8 @@ a {
 			content: "";
 			background-color: transparent;
 			position: absolute;
-			left: -3px;
-			top: -5px;
+			left: -4px;
+			top: -6px;
 			width: 8px;
 			border-bottom: 1px solid #fff;
 			height: 8px;
@@ -302,7 +302,7 @@ a {
 	&__title {
 		text-transform: uppercase;
 		font-size: 4.4rem;
-		font-family: 'gothambold1', serif;
+		font-family: 'gothambold', serif;
 		margin: 70px 0 90px;
 		text-align: center;
 		position: relative;
@@ -407,7 +407,7 @@ a {
 				width: 33vw;
 				height: 33vw;
 				z-index: -1;
-				@include my_pos(25%, 90%);
+				@include my_pos(25%, 82%);
 				background-color: #7e5aff;
 			@media screen and (max-width: 1024px) {
 				// @include my_pos(63%, 63%);
@@ -441,17 +441,7 @@ a {
 	&__info {
 		width: 40%;
 		padding: 0 5%;
-		// width:33vw;
-		// min-width:23vw;
-		
-  		// height:33vw;
-  		// margin:0.5vw auto;
-
-		// width: 45%;
-		
-		// margin: auto 0;
 		@media screen and (max-width: 1024px) {
-		// min-width: 300px;
 		text-align: center;
 		width: 70%;
 		margin: 0 auto;
@@ -462,7 +452,7 @@ a {
 		font-size: 2.2rem;
 	}
 	&__subtitle {
-		font-family: 'gothambold1', sans-serif;
+		font-family: 'gothambold', sans-serif;
 		font-size: 4.4rem;
 		padding: 0;
 		margin: 0;
@@ -861,7 +851,9 @@ a {
 .footer {
 		// height: 520px;
 		position: relative;
-		background: linear-gradient(to bottom left, rgba(126, 90, 255, .9), rgba(85, 183, 255, .9));
+		background:  linear-gradient(to bottom left, rgba(126, 90, 255, .9), rgba(85, 183, 255, .9)) 50% 0, url(../img/footter.jpg);
+		
+		height: 70vh;
 	&__image {
 		width: 100%;
 		// min-height: 100%;
@@ -871,7 +863,6 @@ a {
 		opacity: .1;
 		background-size:cover;
 		width: 100%;
-		height: 70vh;
 	}
 	&__conteiner {
 		display: flex;
